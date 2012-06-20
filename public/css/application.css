@@ -9,10 +9,10 @@ a { color: #666; }
 .redBox { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-image:url(../images/redBoxBg.png); background-repeat:repeat; border:2px solid #000; border-radius:.5em; }
 #socialMediaLinks li a { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-color:transparent; border-radius:.5em; float:left; height:48px; outline:none; width:48px; }
 .redBox, #socialMediaLinks li a, #musicPlayer, #photos img { -moz-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); -webkit-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); }
-#girlImg { background:url(../images/ijmSprite.png) 1px 5px; bottom:283px; height:205px; left:32px; position:absolute; width:195px; }
+#girlImg { background:url(../images/ijmSprite.png) 1px 5px; bottom:273px; height:205px; left:32px; position:absolute; width:195px; }
 
-#ipodHandImg { background:url(../images/ijmSprite.png) 255px -62px; bottom:20px; height:290px; position:absolute; right:20px; width:254px; }
-#masterContainer { height:745px; margin:20px auto auto; position:relative; width:1073px; }
+#ipodHandImg { background:url(../images/ijmSprite.png) 255px -62px; bottom:10px; height:290px; position:absolute; right:20px; width:254px; }
+#masterContainer { height:735px; margin:20px auto auto; position:relative; width:1073px; }
 #leftSidebar, #rightContainer, #centerContent, #rightSidebar { float:left; height:100%; margin-left:20px; }
 #navContainer, #newsContainer { float:left; height:460px; width:216px; }
 #menuLinks, #facebookFeed, #bandDescription { background-image:url(../images/bgStripes.png); background-repeat:repeat; }
@@ -48,7 +48,7 @@ a { color: #666; }
 #stumbleUponLink { background:url(../images/ijmSprite.png) 0 371px; }
 #stumbleUponLink:hover { background:url(../images/ijmSprite.png) -48px 371px; }
 
-#bgShade { background:#000 url(../images/spinner.gif) no-repeat scroll center center; height:100%; left:0; position:absolute; top:0; width:100%; }
+#bgShade { background:#000 url(../images/spinner.png) no-repeat scroll center center; height:100%; left:0; position:absolute; top:0; width:100%; }
 #imgContainer { position:absolute; }
 #imgContainer img { border:2px solid #000; }
 #imgContainer div { background-image:url(../images/redBoxBg.png); background-repeat:repeat; border:2px solid #000; height:28px; }
@@ -81,6 +81,6 @@ a { color: #666; }
 #facebookFeed { float:left; height:395px; margin-top:9px; width:240px; }
 #facebookFeed iframe { border:none; height:395px; overflow:hidden; width:240px; }
 
-#footer { bottom:15px; font-size:.8em; left:0; position:absolute; text-align:center; width:1053px; }
+#footer { bottom:5px; font-size:.8em; left:0; position:absolute; text-align:center; width:1053px; }
 #footer div { bottom:0; color:#666; font-size:.8em; position:absolute; right:0; }
 #imgContainer div span:hover, a:hover { text-decoration:none; }
