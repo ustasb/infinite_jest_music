@@ -1,44 +1,52 @@
-$(document).ready(function () {
-    "use strict";
-    var buttons, slidingMenu, date;
+(function ($, undefined) {
+    'use strict';
+
+    var buttons, slidingMenu, date, loadedThumbnails = false;
 
     buttons = {
         $selectedButton: false,
         selectButton: function ($newButton) {
             var oldID, newID;
             if (buttons.$selectedButton) {
-                oldID = buttons.$selectedButton.attr("id");
-                buttons.$selectedButton.attr("id", oldID.replace("Selected", ""));
+                oldID = buttons.$selectedButton.attr('id');
+                buttons.$selectedButton.attr('id',
+                                             oldID.replace('Selected', ''));
             }
             buttons.$selectedButton = $newButton;
-            newID = $newButton.attr("id");
-            $newButton.attr("id", newID + "Selected");
+            newID = $newButton.attr('id');
+            $newButton.attr('id', newID + 'Selected');
+
+            if (newID === 'photosLink' && !loadedThumbnails) {
+                loadThumbnails();
+                loadedThumbnails = true;
+            }
         }
     };
 
     slidingMenu = {
-        visibleContainer: "",
+        visibleContainer: '',
         slide: function () {
-            slidingMenu.visibleContainer = buttons.$selectedButton.attr("id").replace("LinkSelected", "");
-            $("#slidingMenu").animate({
-                "left": slidingMenu[slidingMenu.visibleContainer]
-            }, "slow", "easeOutBack");
+            slidingMenu.visibleContainer = buttons.$selectedButton.attr('id').
+                                           replace('LinkSelected', '');
+            $('#slidingMenu').animate({
+                'left': slidingMenu[slidingMenu.visibleContainer]
+            }, 'slow', 'easeOutBack');
         },
-        home: "0px",
-        music: "-480px",
-        video: "-960px",
-        photos: "-1440px",
-        contact: "-1920px"
+        home: '0px',
+        music: '-480px',
+        video: '-960px',
+        photos: '-1440px',
+        contact: '-1920px'
     };
 
     function positionImgContainer() {
         var posLeft, posTop;
-        posLeft = ($(window).width() - $("#imgContainer").width()) / 2;
-        posTop = ($(window).height() - $("#imgContainer").height()) / 2;
+        posLeft = ($(window).width() - $('#imgContainer').width()) / 2;
+        posTop = ($(window).height() - $('#imgContainer').height()) / 2;
 
-        $("#imgContainer").css({
-            left: posLeft + "px",
-            top: posTop + "px"
+        $('#imgContainer').css({
+            left: posLeft + 'px',
+            top: posTop + 'px'
         });
     }
 
@@ -48,7 +56,23 @@ $(document).ready(function () {
         });
     }
 
-    $("#menuLinks div").click(function () {
+    function loadThumbnails() {
+        var $link,
+            $photosCont = $('#photos div'),
+            imgNames = ['ghosts', 'bwCovering', 'fourthDimension', 'pipes',
+                        'smiles', 'tallCeiling'];
+
+        for (var i = 0, j = imgNames.length; i < j; i++) {
+            $link = $('<a href="images/photos/' + imgNames[i] + '.png" ' +
+                      'target="blank" class="lightbox"><img src="images' +
+                      '/photos/thumbnails/' + imgNames[i] + '.png" /></a>');
+
+            $photosCont.append($link);
+        }
+    }
+
+    // Events
+    $('#menuLinks div').click(function () {
         buttons.selectButton($(this));
         slidingMenu.slide();
     });
@@ -57,49 +81,54 @@ $(document).ready(function () {
         positionImgContainer();
     });
 
-    $("#imgContainer div span").live("click", function () {
+    $('#imgContainer div span').live('click', function () {
         removeImgContainer();
 
         $('body').css({
-            "overflow-x": "visible",
-            "overflow-y": "visible"
+            'overflow-x': 'visible',
+            'overflow-y': 'visible'
         });
     });
 
-    $("#photos a").click(function () {
-        $("<div id='bgShade'></div>").css({
+    $('#photos').on('click', 'a', function () {
+        $('<div id="bgShade"></div>').css({
             'opacity': '0'
         }).animate({
-            "opacity": '0.5'
-        }, "slow").appendTo("body");
+            'opacity': '0.5'
+        }, 'slow').appendTo('body');
 
         $('body').css({
-            "overflow-x": "hidden",
-            "overflow-y": "hidden"
+            'overflow-x': 'hidden',
+            'overflow-y': 'hidden'
         });
 
-        $("<div id='imgContainer'><div><span>Close</span></div></div>").hide().appendTo($("body"));
+        $('<div id="imgContainer"><div><span>Close</span></div></div>').
+        hide().appendTo($('body'));
 
-        $("<img />").attr("src", $(this).attr("href")).load(function () {
-            $("#imgContainer").fadeIn();
-            $("#imgContainer img").height($(window).height() / 1.3);
-            $("#imgContainer div").width($("#imgContainer img").width());
+        $('<img />').attr('src', $(this).attr('href')).load(function () {
+            $('#imgContainer').fadeIn();
+            $('#imgContainer img').height($(window).height() / 1.3);
+            $('#imgContainer div').width($('#imgContainer img').width());
             positionImgContainer();
-        }).prependTo("#imgContainer");
+        }).prependTo('#imgContainer');
 
         return false;
     });
 
     // Site Initialize 
-    buttons.selectButton($("#homeLink"));
+    $(document).ready(function () {
+        buttons.selectButton($('#homeLink'));
 
-    date = new Date();
-    $("#footer span").html("&copy; Infinite Jest " + date.getFullYear());
+        date = new Date();
+        $('#footer span').html('&copy; Infinite Jest ' + date.getFullYear());
 
-    if (window.PIE) {
-        $('.redBox, #socialMediaLinks li a, #musicPlayer').each(function () {
-            PIE.attach(this);
-        });
-    }
-    // Site Initialize End
-});
+        if (window.PIE) {
+            $('.redBox, #socialMediaLinks li a, #musicPlayer').each(function () {
+                PIE.attach(this);
+            });
+        }
+
+        loadPlugins();
+    });
+
+})(jQuery);
