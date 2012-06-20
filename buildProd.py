@@ -125,27 +125,25 @@ if __name__ == '__main__':
     os.chdir('prod')
 
     # Merge and compress CSS files.
-    mergeDir('css', 'oSnakeMerge.css')
-    compress('css/oSnakeMerge.css', 'css/oSnakeMergeMin.css')
+    compress('css/application.css', 'css/applicationMin.css')
 
     # Merge and compress JavaScript files.
-    mergeDir('js', 'oSnakeMerge.js', '(function ($, undefined) {"use strict";',
-             '})(jQuery);')
-    compress('js/oSnakeMerge.js', 'js/oSnakeMergeMin.js')
+    mergeDir('js', 'applicationMerge.js')
+    compress('js/applicationMerge.js', 'js/applicationMergeMin.js')
 
     # Update the index.html file.
     index = HTMLFile('index.html')
     index.removeDeclarationsInDir('css')
     index.removeDeclarationsInDir('js')
-    index.makeCSSDecl('css/oSnakeMergeMin.css')
-    index.makeJSDecl('js/oSnakeMergeMin.js')
+    index.makeCSSDecl('css/applicationMin.css')
+    index.makeJSDecl('js/applicationMergeMin.js')
     index.addAnalytics('js/googleAnalytics.js')
     index.commit()
     compress(index.filePath, index.filePath)
 
     # Remove excess development files.
     for dir in ('css', 'js'):
-        os.system('cd {0};ls .|grep -v oSnakeMergeMin.{0}|xargs rm;'
+        os.system('cd {0};ls .|egrep -v ".*(PIE|Min).*"|xargs rm;'
                   'cd ..'.format(dir))
     
     # Restore the old cwd.
