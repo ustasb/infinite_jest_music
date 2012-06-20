@@ -1,4 +1,4 @@
-var buttons, slidingMenu, date, loadPlugins, loadedThumbnails = false;
+var buttons, slidingMenu, loadPlugins, loadedThumbnails = false;
 
 buttons = {
     $selectedButton: false,

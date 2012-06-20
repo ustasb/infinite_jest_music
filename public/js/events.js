@@ -47,7 +47,7 @@ $(document).ready(function () {
     centerVertical();
     buttons.selectButton($('#homeLink'));
 
-    date = new Date();
+    var date = new Date();
     $('#footer span').html('&copy; Infinite Jest ' + date.getFullYear());
 
     if (window.PIE) {
