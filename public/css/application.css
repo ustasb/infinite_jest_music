@@ -1,4 +1,4 @@
-html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, input, textarea, p, blockquote, tr, th, td { margin:0; padding:0; }
+html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, input, textarea, p, blockquote, img, tr, th, td { margin:0; padding:0; }
 div, span, a { font-family: Tahoma, Geneva, sans-serif; }
 html { background-image:url(../images/bgStripes.png); background-repeat:repeat; font-size:12pt; height:100%; }
 h1 { font-size:1em; margin-top:10px; }
@@ -51,7 +51,7 @@ a { color: #666; }
 #bgShade { background:#000 url(../images/spinner.gif) no-repeat scroll center center; height:100%; left:0; position:absolute; top:0; width:100%; }
 #imgContainer { position:absolute; }
 #imgContainer img { border:2px solid #000; }
-#imgContainer div { background-image:url(../images/redBoxBg.png); background-repeat:repeat; border:2px solid #000; border-top:none; height:28px; }
+#imgContainer div { background-image:url(../images/redBoxBg.png); background-repeat:repeat; border:2px solid #000; height:28px; }
 #imgContainer div span { color:#FFF; cursor:pointer; float:right; font-size:1.2em; margin-right:5px; text-decoration:underline; }
 
 #rightContainer { width:793px; }
@@ -67,6 +67,7 @@ a { color: #666; }
 .downloadDesc { margin-left:20px; }
 #home #vimeoPlayer { border:2px solid #000; height:240px; margin:15px auto; position:relative; text-align:center; width:428px; }
 #home #vimeoPlayer object { left:0; position:absolute; top:0; }
+#vimeoPlayer div { padding:30px; }
 #home #bandDescription { background-color:#FFF; border:2px solid #000; height:90px; margin:auto; width:428px; }
 #home #bandDescription p { color:#000; font-size:13px; line-height:17px; padding:2px 5px 5px; word-spacing:0; }
 #photos > div { height:350px; margin:15px auto auto; overflow:auto; width:430px; }

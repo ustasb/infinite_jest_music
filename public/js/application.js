@@ -57,18 +57,23 @@
     }
 
     function loadThumbnails() {
-        var $link,
+        var $thumbnail,
+            photoThumbs = [],
             $photosCont = $('#photos div'),
             imgNames = ['ghosts', 'bwCovering', 'fourthDimension', 'pipes',
                         'smiles', 'tallCeiling'];
 
         for (var i = 0, j = imgNames.length; i < j; i++) {
-            $link = $('<a href="images/photos/' + imgNames[i] + '.png" ' +
+            $thumbnail = $('<a href="images/photos/' + imgNames[i] + '.png" ' +
                       'target="blank" class="lightbox"><img src="images' +
                       '/photos/thumbnails/' + imgNames[i] + '.png" /></a>');
 
-            $photosCont.append($link);
+            photoThumbs.push($thumbnail);
+            $photosCont.append($thumbnail);
         }
+
+        // Center the last two elements in a div.
+        photoThumbs[j - 1].add(photoThumbs[j - 2]).wrapAll('<div />');
     }
 
     // Events
