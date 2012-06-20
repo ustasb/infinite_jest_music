@@ -1,0 +1,83 @@
+html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, input, textarea, p, blockquote, tr, th, td { margin:0; padding:0; }
+html { background-image:url(../images/bgStripes.png); background-repeat:repeat; font-size:12pt; height:100%; }
+h1 { font-size:1em; margin-top:10px; }
+h2 { font-size:1em; font-weight:400; margin:10px; }
+a { color:#FFF; }
+
+.redBox { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-image:url(../images/redBoxBg.png); background-repeat:repeat; border:2px solid #000; border-radius:.5em; }
+#socialMediaLinks li a { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-color:transparent; border-radius:.5em; float:left; height:48px; outline:none; width:48px; }
+.redBox, #socialMediaLinks li a, #musicPlayer, #photos img { -moz-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); -webkit-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); }
+#girlImg { background:url(../images/ijmSprite.png) 1px 5px; bottom:263px; height:205px; left:32px; position:absolute; width:195px; }
+
+#ipodHandImg { background:url(../images/ijmSprite.png) 255px -62px; bottom:0; height:290px; position:absolute; right:20px; width:254px; }
+#masterContainer { height:725px; margin:20px auto auto; position:relative; width:1073px; }
+#leftSidebar, #rightContainer, #centerContent, #rightSidebar { float:left; height:100%; margin-left:20px; }
+#navContainer, #newsContainer { float:left; height:460px; width:216px; }
+#menuLinks, #facebookFeed, #bandDescription { background-image:url(../images/bgStripes.png); background-repeat:repeat; }
+#menuLinks, #facebookFeed { border:2px solid #000; float:left; margin-left:20px; margin-top:20px; width:172px; }
+
+#leftSidebar { width:220px; }
+#menuLinks ul { list-style-type:none; }
+#menuLinks div { cursor:pointer; height:45px; }
+#homeLink { background:url(../images/ijmSprite.png) 10px 272px; }
+#homeLink:hover, #homeLinkSelected { background:url(../images/ijmSprite.png) -190px 272px; }
+#musicLink { background:url(../images/ijmSprite.png) 10px 228px; }
+#musicLink:hover, #musicLinkSelected { background:url(../images/ijmSprite.png) -190px 228px; }
+#videoLink { background:url(../images/ijmSprite.png) 10px 184px; }
+#videoLink:hover, #videoLinkSelected { background:url(../images/ijmSprite.png) -190px 184px; }
+#photosLink { background:url(../images/ijmSprite.png) 10px 140px; }
+#photosLink:hover, #photosLinkSelected { background:url(../images/ijmSprite.png) -190px 140px; }
+#contactLink { background:url(../images/ijmSprite.png) 10px 97px; }
+#contactLink:hover, #contactLinkSelected { background:url(../images/ijmSprite.png) -190px 97px; }
+
+#leftSidebar #socialMediaLinks { float:left; height:126px; margin:60px 0 0 7px; width:200px; }
+#socialMediaLinks ul { height:116px; margin:auto; padding:10px 0 0 10px; width:175px; }
+#socialMediaLinks li { float:left; list-style-type:none; margin:0 10px 10px 0; }
+#facebookLink { background:url(../images/ijmSprite.png) 373px 371px; }
+#facebookLink:hover { background:url(../images/ijmSprite.png) 325px 371px; }
+#twitterLink { background:url(../images/ijmSprite.png) 0 419px; }
+#twitterLink:hover { background:url(../images/ijmSprite.png) -48px 419px; }
+#soundCloudLink { background:url(../images/ijmSprite.png) 0 323px; }
+#soundCloudLink:hover { background:url(../images/ijmSprite.png) -48px 323px; }
+#mySpaceLink { background:url(../images/ijmSprite.png) 373px 419px; }
+#mySpaceLink:hover { background:url(../images/ijmSprite.png) 325px 419px; }
+#youTubeLink { background:url(../images/ijmSprite.png) 373px 323px; }
+#youTubeLink:hover { background:url(../images/ijmSprite.png) 325px 323px; }
+#stumbleUponLink { background:url(../images/ijmSprite.png) 0 371px; }
+#stumbleUponLink:hover { background:url(../images/ijmSprite.png) -48px 371px; }
+
+#bgShade { background:#000 url(../images/spinner.gif) no-repeat scroll center center; height:100%; left:0; position:absolute; top:0; width:100%; }
+#imgContainer { position:absolute; }
+#imgContainer img { border:2px solid #000; }
+#imgContainer div { background-image:url(../images/redBoxBg.png); background-repeat:repeat; border:2px solid #000; border-top:none; height:28px; }
+#imgContainer div span { color:#FFF; cursor:pointer; float:right; font-size:1.2em; margin-right:5px; text-decoration:underline; }
+
+#rightContainer { width:793px; }
+#centerContent { margin:0; width:484px; }
+#centerFeature { float:left; height:437px; width:480px; }
+#centerFeature #logo { background:url(../images/ijmSprite.png) 8px 50px; border-bottom:2px solid #FFF; height:47px; margin:5px auto auto; width:400px; }
+#centerFeature #visibleContent { height:383px; overflow:hidden; position:relative; width:480px; }
+#centerFeature #slidingMenu { height:100%; left:0; position:absolute; width:3000px; }
+#musicPlayer { border:2px solid #000; float:left; height:230px; margin-top:20px; width:480px; }
+
+#home, #music, #video, #photos, #contact { color:#FFF; float:left; font-size:1.1em; height:100%; width:480px; }
+#music a, #video a { float:right; margin-right:20px; }
+.downloadDesc { margin-left:20px; }
+#home #vimeoPlayer { border:2px solid #000; height:240px; margin:15px auto; position:relative; text-align:center; width:428px; }
+#home #vimeoPlayer object { left:0; position:absolute; top:0; }
+#home #bandDescription { background-color:#FFF; border:2px solid #000; height:90px; margin:auto; width:428px; }
+#home #bandDescription p { color:#000; font-size:13px; line-height:17px; padding:2px 5px 5px; word-spacing:0; }
+#photos > div { height:350px; margin:15px auto auto; overflow:auto; width:430px; }
+#photos > div div { margin:auto; width:290px; }
+#photos img { border:2px solid #FFF; margin:8px; }
+#photos img:hover { border:none; margin:10px; }
+#contact a { display:block; margin:auto; width:240px; }
+
+#rightSidebar { width:289px; }
+#newsContainer { color:#FFF; padding:0; text-align:center; width:284px; }
+#facebookFeed { float:left; height:395px; margin-top:9px; width:240px; }
+#facebookFeed iframe { border:none; height:395px; overflow:hidden; width:240px; }
+
+#footer { bottom:0; font-size:.8em; left:0; position:absolute; text-align:center; width:1053px; }
+#footer div { bottom:0; color:#666; font-size:.8em; position:absolute; right:0; }
+#imgContainer div span:hover, #slidingMenu a:hover { text-decoration:none; }
