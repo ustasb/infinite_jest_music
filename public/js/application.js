@@ -100,21 +100,3 @@ function loadThumbnails() {
     // Center the last two elements in a div.
     photoThumbs[j - 1].add(photoThumbs[j - 2]).wrapAll('<div />');
 }
-
-
-// Site Initialize 
-$(document).ready(function () {
-    centerVertical();
-    buttons.selectButton($('#homeLink'));
-
-    date = new Date();
-    $('#footer span').html('&copy; Infinite Jest ' + date.getFullYear());
-
-    if (window.PIE) {
-        $('.redBox, #socialMediaLinks li a, #musicPlayer').each(function () {
-            PIE.attach(this);
-        });
-    }
-
-    loadPlugins();
-});

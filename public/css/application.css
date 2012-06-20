@@ -1,14 +1,14 @@
 html, body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, input, textarea, p, blockquote, img, tr, th, td { margin:0; padding:0; }
-div, span, a { font-family: Tahoma, Geneva, sans-serif; }
 html { background-image:url(../images/bgStripes.png); background-repeat:repeat; font-size:12pt; height:100%; }
+div, span, a { font-family: Tahoma, Geneva, sans-serif; }
 h1 { font-size:1em; margin-top:10px; }
 h2 { font-size:1em; font-weight:400; margin:10px; }
 a { color: #666; }
 
 .redBox a { color:#FFF; }
 .redBox { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-image:url(../images/redBoxBg.png); background-repeat:repeat; border:2px solid #000; border-radius:.5em; }
-#socialMediaLinks li a { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-color:transparent; border-radius:.5em; float:left; height:48px; outline:none; width:48px; }
 .redBox, #socialMediaLinks li a, #musicPlayer, #photos img { -moz-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); -webkit-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); }
+#socialMediaLinks li a { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-color:transparent; border-radius:.5em; float:left; height:48px; outline:none; width:48px; }
 #girlImg { background:url(../images/ijmSprite.png) 1px 5px; bottom:273px; height:205px; left:32px; position:absolute; width:195px; }
 
 #ipodHandImg { background:url(../images/ijmSprite.png) 255px -62px; bottom:10px; height:290px; position:absolute; right:20px; width:254px; }

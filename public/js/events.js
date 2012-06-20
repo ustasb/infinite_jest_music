@@ -1,11 +1,11 @@
-$('#menuLinks div').click(function () {
-    buttons.selectButton($(this));
-    slidingMenu.slide();
-});
-
 $(window).resize(function () {
     positionImgContainer();
     centerVertical();
+});
+
+$('#menuLinks div').click(function () {
+    buttons.selectButton($(this));
+    slidingMenu.slide();
 });
 
 $('#imgContainer div span').live('click', function () {
@@ -40,4 +40,21 @@ $('#photos').on('click', 'a', function () {
     }).prependTo('#imgContainer');
 
     return false;
+});
+
+// Site Initialize 
+$(document).ready(function () {
+    centerVertical();
+    buttons.selectButton($('#homeLink'));
+
+    date = new Date();
+    $('#footer span').html('&copy; Infinite Jest ' + date.getFullYear());
+
+    if (window.PIE) {
+        $('.redBox, #socialMediaLinks li a, #musicPlayer').each(function () {
+            PIE.attach(this);
+        });
+    }
+
+    loadPlugins();
 });
