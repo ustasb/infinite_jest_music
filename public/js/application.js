@@ -71,7 +71,7 @@ function centerVertical() {
     marginTop = (marginTop >= 20) ? marginTop : 20;
 
     $masterContainer.css({
-        marginTop: marginTop 
+        marginTop: marginTop + 'px' 
     }); 
 }
 

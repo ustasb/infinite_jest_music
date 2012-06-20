@@ -11,7 +11,7 @@ $('#menuLinks div').click(function () {
 $('#imgContainer div span').live('click', function () {
     removeImgContainer();
 
-    $('body').css({
+    $(document.body).css({
         'overflow-x': 'visible',
         'overflow-y': 'visible'
     });
@@ -22,15 +22,15 @@ $('#photos').on('click', 'a', function () {
         'opacity': '0'
     }).animate({
         'opacity': '0.5'
-    }, 'slow').appendTo('body');
+    }, 'slow').appendTo(document.body);
 
-    $('body').css({
+    $(document.body).css({
         'overflow-x': 'hidden',
         'overflow-y': 'hidden'
     });
 
     $('<div id="imgContainer"><div><span>Close</span></div></div>').
-    hide().appendTo($('body'));
+    hide().appendTo($(document.body));
 
     $('<img />').attr('src', $(this).attr('href')).load(function () {
         $('#imgContainer').fadeIn();
