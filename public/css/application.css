@@ -6,7 +6,7 @@ h2 { font-size:1em; font-weight:400; margin:10px; }
 a { color: #666; }
 
 .redBox a { color:#FFF; }
-.redBox { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-image:url(../images/redBoxBg.png); background-repeat:repeat; border:2px solid #000; border-radius:.5em; }
+.redBox { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-image:url(../images/redBoxBG.png); background-repeat:repeat; border:2px solid #000; border-radius:.5em; }
 .redBox, #socialMediaLinks li a, #musicPlayer, #photos img { -moz-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); -webkit-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); }
 #socialMediaLinks li a { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-color:transparent; border-radius:.5em; float:left; height:48px; outline:none; width:48px; }
 #girlImg { background:url(../images/ijmSprite.png) 1px 5px; bottom:273px; height:205px; left:32px; position:absolute; width:195px; }
@@ -51,7 +51,7 @@ a { color: #666; }
 #bgShade { background:#000 url(../images/spinner.png) no-repeat scroll center center; height:100%; left:0; position:absolute; top:0; width:100%; }
 #imgContainer { position:absolute; }
 #imgContainer img { border:2px solid #000; }
-#imgContainer div { background-image:url(../images/redBoxBg.png); background-repeat:repeat; border:2px solid #000; height:28px; }
+#imgContainer div { background-image:url(../images/redBoxBG.png); background-repeat:repeat; border:2px solid #000; height:28px; }
 #imgContainer div span { color:#FFF; cursor:pointer; float:right; font-size:1.2em; margin-right:5px; text-decoration:underline; }
 
 #rightContainer { width:793px; }
