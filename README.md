@@ -1,4 +1,6 @@
-# Infinite Jest Music 
+# Infinite Jest Music
+
+*Initial release: 10/22/2011*
 
 [infinitejestmusic.com] (http://www.infinitejestmusic.com)
 
