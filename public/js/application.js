@@ -6,8 +6,7 @@ buttons = {
         var oldID, newID;
         if (buttons.$selectedButton) {
             oldID = buttons.$selectedButton.attr('id');
-            buttons.$selectedButton.attr('id',
-                                         oldID.replace('Selected', ''));
+            buttons.$selectedButton.attr('id', oldID.replace('Selected', ''));
         }
         buttons.$selectedButton = $newButton;
         newID = $newButton.attr('id');
@@ -22,18 +21,18 @@ buttons = {
 
 slidingMenu = {
     visibleContainer: '',
+    home: '0px',
+    music: '-480px',
+    video: '-960px',
+    photos: '-1440px',
+    contact: '-1920px',
     slide: function () {
         slidingMenu.visibleContainer = buttons.$selectedButton.attr('id').
                                        replace('LinkSelected', '');
         $('#slidingMenu').animate({
             'left': slidingMenu[slidingMenu.visibleContainer]
         }, 'slow', 'easeOutBack');
-    },
-    home: '0px',
-    music: '-480px',
-    video: '-960px',
-    photos: '-1440px',
-    contact: '-1920px'
+    }
 };
 
 loadPlugins = (function () {
@@ -71,8 +70,8 @@ function centerVertical() {
     marginTop = (marginTop >= 20) ? marginTop : 20;
 
     $masterContainer.css({
-        marginTop: marginTop + 'px' 
-    }); 
+        marginTop: marginTop + 'px'
+    });
 }
 
 function removeImgContainer() {
@@ -90,8 +89,8 @@ function loadThumbnails() {
 
     for (var i = 0, j = imgNames.length; i < j; i++) {
         $thumbnail = $('<a href="images/photos/' + imgNames[i] + '.png" ' +
-                  'target="blank" class="lightbox"><img src="images' +
-                  '/photos/thumbnails/' + imgNames[i] + '.png" /></a>');
+                       'target="blank" class="lightbox"><img src="images' +
+                       '/photos/thumbnails/' + imgNames[i] + '.png" /></a>');
 
         photoThumbs.push($thumbnail);
         $photosCont.append($thumbnail);
