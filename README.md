@@ -1,6 +1,6 @@
 # Infinite Jest Music Website
 
-[infinitejestmusic.com] (http://www.infinitejestmusic.com)
+~~[infinitejestmusic.com] (http://www.infinitejestmusic.com)~~ - No longer up.
 
 Initial release: 09/15/2010
 
