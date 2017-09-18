@@ -9,10 +9,10 @@ a { color: #666; }
 .redBox { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-image:url(../images/redBoxBG.png); background-repeat:repeat; border:2px solid #000; border-radius:.5em; }
 .redBox, #socialMediaLinks li a, #musicPlayer, #photos img { -moz-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); -webkit-box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); box-shadow:0 5px 10px rgba(0, 0, 0, 0.7); }
 #socialMediaLinks li a { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-color:transparent; border-radius:.5em; float:left; height:48px; outline:none; width:48px; }
-#girlImg { background:url(../images/ijmSprite.png) 1px 5px; bottom:273px; height:205px; left:32px; position:absolute; width:195px; }
+#girlImg { background:url(../images/ijmSprite.png) 1px 5px; bottom:343px; height:205px; left:32px; position:absolute; width:195px; }
 
-#ipodHandImg { background:url(../images/ijmSprite.png) 255px -62px; bottom:10px; height:290px; position:absolute; right:20px; width:254px; }
-#masterContainer { height:735px; margin:20px auto auto; position:relative; width:1073px; }
+#ipodHandImg { background:url(../images/ijmSprite.png) 255px -62px; bottom:20px; height:290px; position:absolute; right:20px; width:254px; }
+#masterContainer { height:805px; margin:20px auto auto; position:relative; width:1073px; }
 #leftSidebar, #rightContainer, #centerContent, #rightSidebar { float:left; height:100%; margin-left:20px; }
 #navContainer, #newsContainer { float:left; height:460px; width:216px; }
 #menuLinks, #facebookFeed, #bandDescription { background-image:url(../images/bgStripes.png); background-repeat:repeat; }
@@ -32,7 +32,7 @@ a { color: #666; }
 #contactLink { background:url(../images/ijmSprite.png) 10px 97px; }
 #contactLink:hover, #contactLinkSelected { background:url(../images/ijmSprite.png) -190px 97px; }
 
-#leftSidebar #socialMediaLinks { float:left; height:126px; margin:60px 0 0 7px; width:200px; }
+#leftSidebar #socialMediaLinks { float:left; height:126px; margin:90px 0 0 7px; width:200px; }
 #socialMediaLinks ul { height:116px; margin:auto; padding:10px 0 0 10px; width:175px; }
 #socialMediaLinks li { float:left; list-style-type:none; margin:0 10px 10px 0; }
 #facebookLink { background:url(../images/ijmSprite.png) 373px 371px; }
@@ -60,7 +60,7 @@ a { color: #666; }
 #centerFeature #logo { background:url(../images/ijmSprite.png) 8px 50px; border-bottom:2px solid #FFF; height:47px; margin:5px auto auto; width:400px; }
 #centerFeature #visibleContent { height:383px; overflow:hidden; position:relative; width:480px; }
 #centerFeature #slidingMenu { height:100%; left:0; position:absolute; width:3000px; }
-#musicPlayer { border:2px solid #000; float:left; height:230px; margin-top:20px; width:480px; }
+#musicPlayer { border:2px solid #000; float:left; height:300px; margin-top:20px; width:480px; }
 
 #home, #music, #video, #photos, #contact { color:#FFF; float:left; font-size:1.1em; height:100%; width:480px; }
 .downloadDesc { margin-left:20px; }
