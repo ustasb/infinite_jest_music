@@ -42,13 +42,10 @@ $('#photos').on('click', 'a', function () {
     return false;
 });
 
-// Site Initialize 
+// Site Initialize
 $(document).ready(function () {
     centerVertical();
     buttons.selectButton($('#homeLink'));
-
-    var date = new Date();
-    $('#footer span').html('&copy; Infinite Jest ' + date.getFullYear());
 
     if (window.PIE) {
         $('.redBox, #socialMediaLinks li a, #musicPlayer').each(function () {
