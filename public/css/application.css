@@ -11,7 +11,7 @@ a { color: #666; }
 #socialMediaLinks li a { -moz-border-radius:.5em; -webkit-border-radius:.5em; background-color:transparent; border-radius:.5em; float:left; height:48px; outline:none; width:48px; }
 #girlImg { background:url(../images/ijmSprite.png) 1px 5px; bottom:343px; height:205px; left:32px; position:absolute; width:195px; }
 
-#ipodHandImg { background:url(../images/ijmSprite.png) 255px -62px; bottom:20px; height:290px; position:absolute; right:20px; width:254px; }
+#ipodHandImg { background:url(../images/ijmSprite.png) 255px -62px; bottom:25px; height:290px; position:absolute; right:20px; width:254px; }
 #masterContainer { height:805px; margin:20px auto auto; position:relative; width:1073px; }
 #leftSidebar, #rightContainer, #centerContent, #rightSidebar { float:left; height:100%; margin-left:20px; }
 #navContainer, #newsContainer { float:left; height:460px; width:216px; }
@@ -65,7 +65,7 @@ a { color: #666; }
 #home, #music, #video, #photos, #contact { color:#FFF; float:left; font-size:1.1em; height:100%; width:480px; }
 .downloadDesc { margin-left:20px; }
 #home #vimeoPlayer { border:2px solid #000; height:240px; margin:15px auto; position:relative; text-align:center; width:428px; }
-#home #vimeoPlayer object { left:0; position:absolute; top:0; }
+#home #vimeoPlayer iframe { left:0; position:absolute; top:0; }
 #vimeoPlayer div { padding:30px; }
 #home #bandDescription { background-color:#FFF; border:2px solid #000; height:90px; margin:auto; width:428px; }
 #home #bandDescription p { color:#000; font-size:13px; line-height:17px; padding:2px 5px 5px; word-spacing:0; }
