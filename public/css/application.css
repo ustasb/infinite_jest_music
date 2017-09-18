@@ -76,7 +76,9 @@ a { color: #666; }
 #contact a { display:block; margin:auto; width:240px; }
 
 #rightSidebar { width:289px; }
-#newsContainer { color:#FFF; padding:0; text-align:center; width:284px; }
+#newsContainer { padding:0; text-align:center; width:284px; }
+#newsContainer h1 { color:#FFF; }
+#newsContainer p { margin-top: 20px; }
 #facebookFeed { float:left; height:395px; margin-top:9px; width:240px; }
 #facebookFeed iframe { border:none; height:395px; overflow:hidden; width:240px; }
 
