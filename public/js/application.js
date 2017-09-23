@@ -38,13 +38,11 @@ slidingMenu = {
 loadPlugins = (function () {
 
     var vimeoEls = '<iframe src="https://player.vimeo.com/video/15680024?byline=0&portrait=0" width="428" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
-        soundCloudEls = '<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/459454&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>',
-        facebookEls = '<iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FInfinite-Jest%2F310503818119&amp;width=240&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=true&amp;header=false&amp;height=395" scrolling="no" frameborder="0"></iframe>';
+        soundCloudEls = '<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/459454&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>';
 
     return function () {
         $('#vimeoPlayer').append(vimeoEls);
         $('#musicPlayer').append(soundCloudEls);
-        $('#facebookFeed').append(facebookEls);
     };
 
 })();

@@ -33,6 +33,7 @@ a { color: #666; }
 #contactLink:hover, #contactLinkSelected { background:url(../images/ijmSprite.png) -190px 97px; }
 
 #leftSidebar #socialMediaLinks { float:left; height:126px; margin:90px 0 0 7px; width:200px; }
+#facebookLikeButton { margin:auto; margin-top:25px; width:50px; }
 #socialMediaLinks ul { height:116px; margin:auto; padding:10px 0 0 10px; width:175px; }
 #socialMediaLinks li { float:left; list-style-type:none; margin:0 10px 10px 0; }
 #facebookLink { background:url(../images/ijmSprite.png) 373px 371px; }
@@ -80,7 +81,6 @@ a { color: #666; }
 #newsContainer h1 { color:#FFF; }
 #newsContainer p { margin-top: 20px; }
 #facebookFeed { float:left; height:395px; margin-top:9px; width:240px; }
-#facebookFeed iframe { border:none; height:395px; overflow:hidden; width:240px; }
 
 #footer { bottom:5px; font-size:.8em; left:0; position:absolute; text-align:center; width:1053px; }
 #footer div { bottom:0; color:#666; font-size:.8em; position:absolute; right:0; }
